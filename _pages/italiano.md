@@ -1,31 +1,31 @@
 ---
 layout: default
-title: Primo Prototype Documentation
-category: documentation
+titolo: Primo Documentazione del prototipo
+category: documentazione
 ---
 
-<div id="edit"> <a href="http://github.com/primo-io/prototype-documentation/blob/gh-pages/index.md">Edit this Document</a></div>
+<div id="edit"> <a href="http://github.com/primo-io/prototype-documentation/blob/gh-pages/index.md">Modifica questo documento</a></div>
 
 <div id="notes">
-	This is the first draft of this documentation, published on the 28th of February. <br>
-	The Arduino code is still missing, we are working on it but it will be published next week. Keep an eye on this page as new content will be added daily.
+	Questa è la prima bozza della documentazione di Primo, pubblicata il 28 febbraio 2014. <br>
+	Il codice Arduino non è incluso in questa versione perché stiamo ancora perfezionandolo, ma sarà presto reso pubblico. Visita spesso questa pagina perché sarà aggiornata giornalmente con dei nuovi contenuti.
 	<br><br>
-	<a href="http://github.com/primo-io/prototype-documentation">See it on GitHub</a>
+	<a href="http://github.com/primo-io/prototype-documentation">Vedi su GitHub</a>
 </div>
 
-##0. What is this document
+##0. Cosa è questo documento?
 
 ![primo play set](images/photo/maker-guide.jpg)
-This document gathers and organizes all the information necessary to build a Primo Prototype.
-You can find more info about the project on the [primo.io](http://primo.io) website.
+Questo document raccoglie e organizza tutte le informazioni necessarie per costruire un prototipo di Primo.
+Se vuoi saperne di più su Primo visita il sito ufficiale: [primo.io](http://primo.io) 
 
-##IMPORTANT
-The documentation and instructions inclosed in this document will allow you to produce a Primo prototype as shown in this video, which is different to the final product. However, we will also keep releasing the necessary documentation for updates and new versions of the Primo Play Set, including files for the final product, as and when we have them tried and tested.
+##IMPORTANTE
+La documentazione e le istruzioni incluse in questo documento permettono di realizzare un prototipo di Primo così come appare in questo video, in una versione differente dal prodotto finale. Parallelamente, continueremo a pubblicare la documentazione necessaria riguardo agli aggiornamenti e alle nuove versioni del Primo Play Set, e a includere i file del prodotto finale we will also keep releasing the necessary documentation for updates and new versions of the Primo Play Set, solo dopo averli testati.
 
 
-##MORE IMPORTANT
-The license under we released the Primo Play Set gives you the freedom of building your own Prototype. However, **you are not entitled to sell it as Primo**, under any circumstances. Also, if you make a derivative of our product, you have to quote the original project (as we do with all our sources), and use our same license: [CC by-nc-sa 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/). <br>
-This is not just to protect intellectual property, but also to keep a track of the flow of ideas. As we are spending a lot of time and resources to keep this documentation free and accessible, we also encourage you to "give back" and post your derivatives, results, suggestions, insults and praises. We are more than happy to hear and answer your feedbacks and blog cool stuff.
+##MOLTO IMPORTANTE
+La licenza che abbiamo scelto per pubblicare Primo Play Set ti permette di costruire un tuo prototipo. **Tu non hai diritto a venderlo come Primo**, in nessuna circostanza. Inoltre, se crei un derivato del nostro prodotto, devi sempre indicare Primo come progetto originale (come facciamo anche noi con tutte le nostre risorse), e usare la nostra stessa licenza: [CC by-nc-sa 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/). <br>
+Questa procedura non deve essere applicata solo per proteggere la nostra proprietà intellettuale, ma per tenere traccia del flusso delle idee. Visto che stiamo investendo molto tempo e risorse per fare in modo che questa documentazione sia gratuita e accessibile, ti incoraggiamo a "rendere" e pubblicare il tuo derivato, i risultati, i suggerimenti, gli insulti e gli elogi. Siamo molto felici di ricevere e rispondere We are more than happy to hear and answer your feedbacks and blog cool stuff.
 
 ###How to translate this document
 
