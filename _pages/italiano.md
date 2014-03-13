@@ -25,7 +25,7 @@ La documentazione e le istruzioni incluse in questo documento permettono di real
 
 ##MOLTO IMPORTANTE
 La licenza che abbiamo scelto per pubblicare Primo Play Set ti permette di costruire un tuo prototipo. **Tu non hai diritto a venderlo come Primo**, in nessuna circostanza. Inoltre, se crei un derivato del nostro prodotto, devi sempre indicare Primo come progetto originale (come facciamo anche noi con tutte le nostre risorse), e usare la nostra stessa licenza: [CC by-nc-sa 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/). <br>
-Questa procedura non deve essere applicata solo per proteggere la nostra proprietà intellettuale, ma per tenere traccia del flusso delle idee. Visto che stiamo investendo molto tempo e risorse per fare in modo che questa documentazione sia gratuita e accessibile, ti incoraggiamo a "rendere" e pubblicare il tuo derivato, i risultati, i suggerimenti, gli insulti e gli elogi. Siamo molto felici di ricevere e rispondere We are more than happy to hear and answer your feedbacks and blog cool stuff.
+Questa procedura non deve essere applicata solo per proteggere la nostra proprietà intellettuale, ma per tenere traccia del flusso delle idee. Visto che stiamo investendo molto tempo e risorse per fare in modo che questa documentazione sia gratuita e accessibile, ti incoraggiamo a "rendere" e pubblicare il tuo derivato, i risultati, i suggerimenti, gli insulti e gli elogi. Siamo molto felici di ricevere e rispondere 8 and blog cool stuff.
 
 ###How to translate this document
 
