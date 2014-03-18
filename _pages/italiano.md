@@ -20,14 +20,14 @@ Questo document raccoglie e organizza tutte le informazioni necessarie per costr
 Se vuoi saperne di più su Primo visita il sito ufficiale: [primo.io](http://primo.io) 
 
 ##IMPORTANTE
-La documentazione e le istruzioni incluse in questo documento permettono di realizzare un prototipo di Primo così come appare in questo video, in una versione differente dal prodotto finale. Parallelamente, continueremo a pubblicare la documentazione necessaria riguardo agli aggiornamenti e alle nuove versioni del Primo Play Set, e a includere i file del prodotto finale we will also keep releasing the necessary documentation for updates and new versions of the Primo Play Set, solo dopo averli testati.
+La documentazione e le istruzioni incluse in questo documento permettono di realizzare un prototipo di Primo così come appare in questo video, in una versione differente dal prodotto finale. Parallelamente, continueremo a pubblicare la documentazione necessaria riguardo agli aggiornamenti e alle nuove versioni del Primo Play Set, e a includere i file del prodotto finale, solo dopo averli testati.
 
 
 ##MOLTO IMPORTANTE
 La licenza che abbiamo scelto per pubblicare Primo Play Set ti permette di costruire un tuo prototipo. **Tu non hai diritto a venderlo come Primo**, in nessuna circostanza. Inoltre, se crei un derivato del nostro prodotto, devi sempre indicare Primo come progetto originale (come facciamo anche noi con tutte le nostre risorse), e usare la nostra stessa licenza: [CC by-nc-sa 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/). <br>
 Questa procedura non deve essere applicata solo per proteggere la nostra proprietà intellettuale, ma per tenere traccia del flusso delle idee. Visto che stiamo investendo molto tempo e risorse per fare in modo che questa documentazione sia gratuita e accessibile, ti incoraggiamo a "rendere" e pubblicare il tuo derivato, i risultati, i suggerimenti, gli insulti e gli elogi. Siamo molto felici di ricevere e rispondere 8 and blog cool stuff.
 
-###How to translate this document
+###Come tradurre questo documento
 
 If you want to translate this page in your language, you have multiple options, depending on your .
 
@@ -43,17 +43,17 @@ You don't have to modify this code, but just copy and paste the whole text in yo
 Ig you are already familiar with git, in a few words you have to copy the 
 
 
-##1. What is Primo
+##1. Che cosa è Primo
 
 ![primo play set](images/photo/primo.jpg)
 
-Primo is a tangible interface designed to introduce programming logic to little children (3 to 7), without the need for literacy. The goal of the game is to drive a little robot called Cubetto back to his house. To accomplish the goal, children have to program the little robot using a limited set of instructions: forward, left, right and function. While the first three are rather intuitive, the last one calls a sub-routine, an extra line of instructions packed in a single command.
+Primo è un'interfaccia tangibile progettata per spiegare la logica della programmazione a bambini dai 3 ai 7 anni, ovvero nell'età pre alfabetismo. Obiettivo del gioco è di fare in modo che una piccola macchina robot chiamata Cubetto torni a casa. Per completare il gioco, i bambini devono programmare il piccolo robot attraverso una serie di istruzioni: avanti, sinistra, destra e funzione. Le prime tre istruzioni sono abbastanza intuitive, mentre l'ultima - la funzione - va a richiamare una "sub-routine", ovvero quello che in programmazione è un'insieme di istruzioni compresse in un unico comando. 
 
 <div class="videoWrapper">
 	<iframe src="//player.vimeo.com/video/82620072" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
 </div>
 
-##2. Research
+##2. La ricerca alla base del progetto Primo
 
 Teaching programming to children is a widely debated topic. We are aware of a moderate number of solutions that try to accomplish this for children above the ages of 8. However, there aren't many of these solutions suitable for younger children, and there aren't any that work without a screen or without the need for literacy. We see an increasing number of Apps for tablets and computers that also work in combination with physical robots, but none of them are completely free from the pixel domain in the same way the Primo Play Set is.
 
