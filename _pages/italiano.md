@@ -77,67 +77,67 @@ Il secondo problema è stato progettare un sistema stabile per riconoscere i blo
 
 L'idea è di usare vari blocchi che possono essere riconosciuti dalla board attraverso delle resistenze, ovvero un voltage divider con le pin analogiche di Arduino che leggono i valori delle resistenze. Un metodo molto semplice, ma molto efficace per realizzare un prototipo.
 
-Design-wise, some features required testing; the actual design is the result of several iterations. 
+Dal punto di vista del design, alcune funzionalità dovevano essere testate; il design attuale è il risultato di diverse iterazioni. 
 
-The 'snake' or 'zig-zag' path of the instruction sequence was chosen to avoid literacy pre-conceptions.  
+Il percorso a 'serpente' o 'zig-zag' della sequenza di istrizioni è stato scelto per evitare che l'utente abbia bisogno di concetti di alfabetismo.  
 
 ![left to right](images/illustrations/left-to-right.jpg)
 
-The 'D' shape of the block connectors, was designed so that blocks could be inserted just one way, to be consistent with the path design and the direction of the car. Multiple designs can be used for this. The D shape was chosen as it is basically an 'oriented circle' and as a shape, also recalls similar pin-board designs.
+La forma a 'D' dei blocchi "connettori" è stata progettata in modo che i blocchi potessero essere inseriti solo in un verso, al fine di renderli consistenti con il design del percorso e la direzione della macchina. Design molteplici possono essere utilizzati per questa parte del gioco. La forma a D è stata scelta soprattutto perché è un 'cerchio oeriented' e perché richiama il design di altre board che usano dei blocchi.
 
 ![instruction blocks](images/photo/instruction-blocks.jpg)
 
-The design for the shape of the instruction blocks is still being tested. The actual design works quite well, children easily grasp their meaning, they just have some troubles at the first to get familiar with the left and right block. This is also because the "right" and "left" concept is generally quite new for them. We are currently testing other blocks design, to improve this even further.
+The design della forma dei blocchi 'istruzione' deve ancora essere testata. Il design attuale funziona abbastanza bene, i bambini facilmente riescono a comprendere la loro funzione, ma hanno solo dei problemi durante il primo uso a capire la differenza tra i blocchi a sinista e quelli a destra. Questo succede anche perché il concetto di 'destra' e 'sinistra' è qualcosa di nuovo a quella età. Stiamo attualmente testando dei nuovi design per i blocchi al fine di migliorare questo aspetto.
 
 <div class="videoWrapper">
 	<iframe src="//player.vimeo.com/video/50570097" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
-At the beginning the robot was a toy car. A very complicated and time consuming shape to produce, as it's a laser-cut shape glued together layer by layer, and subsequently sanded for over an hour. The car had another major issue, it was very boy oriented. We wanted to avoid entering in discussions about 'brain toy' producers being criticised of only producing boy-oriented toys. We wanted to stay neutral, we didn't want to create a toy specifically for boys or girls, and instead opted for a very neutral geometry, a box.
+Al principio, il robot era una macchina la cui realizzazione era molto complicata e dispendiosa in termini di tempo: era composta da strati di legno tagliati al laser e incollati uno per uno e successivamente cartavetrati per più di un'ora. La macchina aveva anche un altro problema: sembrava solo per maschietti. Abbiamo voluto evitare di creare discussioni riguardo alla produzione di giocattoli per maschi e essere criticati per questo. Abbiamo deciso, quindi, di restare neutri e creare un prodotto indirizzato sia ai bambini, così abbiamo optato per una geometria semplice, ovvero una scatola.
 
-A name was given to the little box, along with a personality and a similey face, making it even more appealing for children. The robot is called Cubetto (little cube in Italian). The idea with Cubetto is also to create a basic module that can be expanded and customized easily in the future.
+Abbiamo dato un nome alla piccola scatola e una personalità tramite ad un volto sorridente, rendendolo molto attrattivo per i bambini. Il robot è stato chiamato Cubetto. L'idea alla base di Cubetto è di offrire un modulo di base che può essere modificato e personalizzato facilmente in futuro.
 
 ![cubetto](images/photo/cubetto.jpg)
 
-##3. Getting Started
+##3. Per iniziare
 
-###3.1 The basics
+###3.1 Le componenti di base
 
-Primo is composed of three parts: An Interface Board, Cubetto and a set of Instruction Blocks. Children interact with the Interface Board by placing Instruction Blocks into the holes, to create a sequence (A program) that Cubetto executes. 
+Primo è composto da tre parti: una interfaccia fisica, Cubetto e il set di blocchi 'istruzione'. I bambini interagiscono con l'interfaccia fisica inserendo i blocchi nei fori, creando una sequenza (il programma A) che Cubetto esegue. 
 
-There are four types of Instruction Blocks, this means that resistors of 4 different values can be used, possibly quite distant between each other.
+Ci sono quattro tipi di blocchi e questo vuol dire che devono essere usate le resistenze di quattro valori differenti, possibilmente distanti l'uno dall'altra. 
 
-The blocks are inserted into the holes of the Interface Board, where the resistor value is identified. After that, the values are processed into a string that is sent to Cubetto using two XBee modules. Cubetto then executes the instructions, one after the other.
+I blocchi devono essere inseriti nei fori dell'interfaccia fisica dove è rilevato il valore delle resistenze. Dopo il riconoscimento, i valori sono elaborati in una sequenza di caratteri che è inviata a Cubetto attraverso il modulo XBee. Cubetto poi esegue le istruzioni, una dopo l'altra. 
 
-The brain of the prototype is made of two Arduino Boards, a UNO (A Leonardo or a Duemilanove will also do) for Cubetto, and a Mega for the Interface Board, where 16 analog inputs are required.
+Il cervallo del prototipo è basato su due schede Arduino, una UNO (o una Leonardo o una Duemilanove funziono ugualmente) per Cubetto e una Mega per l'interfaccia fisica per la quale sono necessari 16 pin per gli input analogici.
 
-###3.2 Electronics
+###3.2 L'elettronica
 
-###Tools Required
+###Strumenti necessari
 
-* Soldering Iron
-* Solder
-* Wires
-* Hot Glue Gun
-* Wood Glue
-* Copper Tape 5mm wide
+* Saldatore
+* Stagno
+* Cavi
+* Pistola con colla a caldo
+* Colla per il legno
+* Nastro di rame di larghezza 5 mm
 
-###Materials (prices in euro)
+###Materiali (prezzi in euro)
 
 Cubetto ~ 88 €
 
-* Arduino UNO (or Leonardo) - 20 € : [Arduino Store](http://store.arduino.cc/index.php?main_page=product_info&cPath=11&products_id=195#.UxC5nfTV_bA)
+* Arduino UNO (o Leonardo) - 20 € : [Arduino Store](http://store.arduino.cc/index.php?main_page=product_info&cPath=11&products_id=195#.UxC5nfTV_bA)
 * Arduino Proto Wireless Shield - 14.90 € : [Arduino Store](http://store.arduino.cc/index.php?main_page=product_info&cPath=37_5&products_id=145#.UxC53vTV_bA)
 * SN754410 Motor Driver - 3.90 € : [Arduino Store](http://store.arduino.cc/index.php?main_page=product_info&cPath=6_33&products_id=153#.UxC5-_TV_bB)
-* XBee (series 1 or 2, doesn't make any difference) : 23.90 € - [Arduino Store](http://store.arduino.cc/index.php?main_page=product_info&cPath=37_38&products_id=292#.UxC6cvTV_bA)
-* SolarBotics Wheels x 2 : 4.74 € - [Solarbotics Store](https://solarbotics.com/product/gmpw/)
+* XBee (serie 1 or 2, non c'è differenza) : 23.90 € - [Arduino Store](http://store.arduino.cc/index.php?main_page=product_info&cPath=37_38&products_id=292#.UxC6cvTV_bA)
+* SolarBotics ruote x 2 : 4.74 € - [Solarbotics Store](https://solarbotics.com/product/gmpw/)
 * SolarBotics Gear Motors GM3 x 2 : 8.36 € - [Solarbotics Store](https://solarbotics.com/product/gm3/)
 * 2 Ball Casters : 5.79 € - [Solarbotics Store](https://solarbotics.com/product/23160/)
 * CNY70 x 2 : 1 € - [Mouser](http://uk.mouser.com/ProductDetail/Vishay/CNY70/?qs=%2fha2pyFaduj8YpDhNNtXszq4w32cl%2fAjUjdOwQUvJUM%3d)
-* (optional) Battery Holder : 4 € - [Solarbotics Store](https://solarbotics.com/product/bholdaa_4_cell/)
-* (optional) 4 x Rechargeable Batteries
+* (optional) Battery Holder: 4 € - [Solarbotics Store](https://solarbotics.com/product/bholdaa_4_cell/)
+* (optional) 4 x Batterie ricaricabili
 
-Interface Board ~ 88 € (pure coincidence)
+Interfaccia fisica ~ 88 € (solo una coincidenza)
 
 * Arduino Mega 2560 : 39.00 € - [Arduino Store](http://store.arduino.cc/index.php?main_page=product_info&cPath=11&products_id=196#.UxC_gPTV_bA)
 * Arduino Proto Wireless Shield : 14.90 - [Arduino Store](http://store.arduino.cc/index.php?main_page=product_info&cPath=37_5&products_id=145#.UxC53vTV_bA)
@@ -149,27 +149,27 @@ Interface Board ~ 88 € (pure coincidence)
 * 50 Male Headers : 1 € 
 * 16 Double male headers : 0.50 € - [Arduino Store](http://store.arduino.cc/index.php?main_page=product_info&cPath=6_32&products_id=294#.UxC_3fTV_bA)
 * 50 female headers : 1 € - [Arduino Store](http://store.arduino.cc/index.php?main_page=product_info&cPath=6_32&products_id=188#.UxDAAfTV_bA)
-* 16 Magnets ø 4 h 3 : 3.5 € - [Supermagnete](http://www.supermagnete.ch/eng/S-04-03-N)
+* 16 Magneti ø 4 h 3 : 3.5 € - [Supermagnete](http://www.supermagnete.ch/eng/S-04-03-N)
 
-Instruction Blocks ~ 4 €
+Blocchi ~ 4 €
 
-* 4 x 4.7K Ω Resistor : 0.04 € - [Mouser](http://uk.mouser.com/ProductDetail/Xicon/291-47K-RC/?qs=sGAEpiMZZMu61qfTUdNhG%2fbdyz6pU6a%252bvHlD5kaZWgo%3d)
-* 4 x 100K Ω Resistor : 0.04 € - [Mouser](http://uk.mouser.com/ProductDetail/Xicon/291-100K-RC/?qs=sGAEpiMZZMu61qfTUdNhG81NIhcRRUJQxII5Nsctha8%3d)
-* 4 x 220 Ω Resistor : 0.04 € - [Mouser](http://uk.mouser.com/ProductDetail/Xicon/291-220-RC/?qs=sGAEpiMZZMu61qfTUdNhG%2f1uGo5nxyCVqn6ChOCvUEE%3d)
-* 4 x 10K Ω Resistor : 0.04 € - [Mouser](http://uk.mouser.com/ProductDetail/Xicon/291-10K-RC/?qs=sGAEpiMZZMu61qfTUdNhG6xwTrVwTvbz8PPav3aExs8%3d)
-* 16 Magnets ø 4 h 3 : 3.5 € - [Supermagnete](http://www.supermagnete.ch/eng/S-04-03-N)
+* 4 x 4.7K Ω Resistenza : 0.04 € - [Mouser](http://uk.mouser.com/ProductDetail/Xicon/291-47K-RC/?qs=sGAEpiMZZMu61qfTUdNhG%2fbdyz6pU6a%252bvHlD5kaZWgo%3d)
+* 4 x 100K Ω Resistenza : 0.04 € - [Mouser](http://uk.mouser.com/ProductDetail/Xicon/291-100K-RC/?qs=sGAEpiMZZMu61qfTUdNhG81NIhcRRUJQxII5Nsctha8%3d)
+* 4 x 220 Ω Resistenza : 0.04 € - [Mouser](http://uk.mouser.com/ProductDetail/Xicon/291-220-RC/?qs=sGAEpiMZZMu61qfTUdNhG%2f1uGo5nxyCVqn6ChOCvUEE%3d)
+* 4 x 10K Ω Resistenza : 0.04 € - [Mouser](http://uk.mouser.com/ProductDetail/Xicon/291-10K-RC/?qs=sGAEpiMZZMu61qfTUdNhG6xwTrVwTvbz8PPav3aExs8%3d)
+* 16 Magneti ø 4 h 3 : 3.5 € - [Supermagnete](http://www.supermagnete.ch/eng/S-04-03-N)
 
-###3.3 Energy
+###3.3 Alimentazione
 
-Cubetto and (optionally) the Interface Board, are battery powered. For the prototype you can use a LiPo battery or regular AA batteries, that's entirely up to you. We used both, LiPo batteries are good but you need extra equipment, if you are starting from scratch we recommend AA batteries. Just remember they run out very quickly, so the best would be to use rechargeable batteries, like NiMh.
+Cubetto e (opzionalmente) l'interfaccia fisica, sono alimentati tramite batteria. Per il prototipo, è possibile usare una batteria LiPo or una batteria normale AA, a scelta. Noi abbiamo usato entrambe, le batterie LiPo sono buone, ma non richiedono l'utilizzo di componenti aggiuntivi. Se state iniziando da zero, suggeriamo di usare le batterie AA. Considerate solo che si consumano molto velocemente, quindi, la soluzione migliore è usare batterie ricaricabili come le NiMh.
 
-###3.4 Prototype Design
+###3.4 Design del prototipo
 
-The whole product is made out of laser cut wood, mainly 4 mm thick, with only one layer being 1mm thick. You can laser cut these parts using services like Ponoko, or in your local FabLab. The first prototype was laser cut inside [FabLab Lugano](http://fablab.supsi.ch/), while the product development advanced in [FabLab Torino](http://fablabtorino.org/), where part of Primo development team still resides.
+L'intero prodotto è fatto con legno tagliato con una macchina laser, 4mm di spessore, con un solo strato di spesso 1mm.  Potete tagliare queste parti usando servizi come Ponoko, o presso il fablab più vicino a casa vostra. Il primo prototipo è stato tagliato al [FabLab Lugano](http://fablab.supsi.ch/), mentre lo sviluppo avanzato del prodotto al [FabLab Torino](http://fablabtorino.org/), dove vive e lavora ancora una parte del team di sviluppo. 
 
-Building Cubetto and the Interface Board is a laborious but very simple procedure, their shells are basically boxes. The real complexity lays in the Instruction Blocks. They are a double 4mm wood layer with magnets and resistors soldered inside.
+Costuire Cubetto and l'interfaccia fisica è abbastanza laborioso, ma la procedura è abbastanza semplice: le scocche sono semplicemente delle scatole! La parte più complessa è l'assemblaggio dei blocchi che sono costituiti da un doppio strato di legno con spessore 4mm e magneti e resistenze saldate al suo interno.
 
-##4. Prototype Making
+##4. Realizzare il prototipo
 
 ###[Download Source Files](files/primo-prototype-laser.zip)
 
