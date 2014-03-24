@@ -171,7 +171,7 @@ Costuire Cubetto and l'interfaccia fisica è abbastanza laborioso, ma la procedu
 
 ##4. Realizzare il prototipo
 
-###[Download Source Files](files/primo-prototype-laser.zip)
+###[Scarica i file sorgente](files/primo-prototype-laser.zip)
 
 ###4.1 L'interfaccia fisica
 
