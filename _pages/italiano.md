@@ -173,13 +173,13 @@ Costuire Cubetto and l'interfaccia fisica è abbastanza laborioso, ma la procedu
 
 ###[Download Source Files](files/primo-prototype-laser.zip)
 
-###4.1 Interface Board
+###4.1 L'interfaccia fisica
 
-To make the interface board you have to laser cut two files: interface-board-4mm.dxf and interface-board-1mm.dxf: the first one is for 4mm plywood and the second one for 1mm plywood. As you can see from the files, the parts are numbered, to ease the assembly process. The numbers are stored on a different layer, so you can easily remove them before lasering. We recommend adjusting the hole for the push button, based on the size of the button you wish to use or have.
+Per are l'interfaccia fisica, dovete tagliare al laser due file, interface-board-4mm.dxf e interface-board-1mm.dxf: il primo file serve per lavorare il compensato di spessore 4mm e il secondo per il compensato di 1mm. Come potete vedere dai file, le parti sono numerate per facilitarvi nel processo di assemblaggio. I numeri sono indicati in un livello diverso per permettervi di rimuoverli facilmente prima di tagliare il file con la macchina laser. Vi suggeriamo di verficare e modificare la grandezza dei fori che deve essere adeguata alla grandezza del bottone che intendete usare o che avete. 
 
-First of all, you have to glue parts 3 and 4 together, use the holes in the corners to align them with screws while gluing and let it rest for a night. 
+Prima di tutto, dovete incollare le parti numero 3 e numero 4 e usare i fori negli angoli per allinearle con le viti mentre versate la colla. Poi, dovete lasciarle a riposo per una notte. 
 
-Then take the copper tape, cut 32 pieces of 70mm each and put them inside the rectangular holes in the part that you just glued, they should be at least 30mm wide on each side. Once you finished, you can now glue all the remaining top layers of the interface board, this is the correct order:
+Dopo, prendete il nastro di rame, tagliate 32 pezzi di larghezza 70 mm ciascuno e poneteli all'interno thei fori rettangolari sulla zona che avete appena incollato. Verficate che stiano almeno a 30mm da ogni lato. Once you finished, you can now glue all the remaining top layers of the interface board, this is the correct order:
 
 Then take the copper tape, cut 32 pieces of 70mm each and put them inside the rectangular holes in the part that you just glued, they should be at least 30mm wide on each side. 
 
