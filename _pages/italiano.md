@@ -179,51 +179,48 @@ Per are l'interfaccia fisica, dovete tagliare al laser due file, interface-board
 
 Prima di tutto, dovete incollare le parti numero 3 e numero 4 e usare i fori negli angoli per allinearle con le viti mentre versate la colla. Poi, dovete lasciarle a riposo per una notte. 
 
-Dopo, prendete il nastro di rame, tagliate 32 pezzi di larghezza 70 mm ciascuno e poneteli all'interno thei fori rettangolari sulla zona che avete appena incollato. Verficate che stiano almeno a 30mm da ogni lato. Once you finished, you can now glue all the remaining top layers of the interface board, this is the correct order:
-
-Then take the copper tape, cut 32 pieces of 70mm each and put them inside the rectangular holes in the part that you just glued, they should be at least 30mm wide on each side. 
+Dopo, prendete il nastro di rame, tagliate 32 pezzi di larghezza 70 mm ciascuno e poneteli all'interno thei fori rettangolari sulla zona che avete appena incollato. Verificate che stiano almeno a 30mm da ogni lato. Quando avete finito, potete incollare tutti gli strati rimanenti nell'ordine corretto:
 
 ![copper connectors](images/illustrations/board-1.jpg)
 ![copper connectors](images/illustrations/board-2.jpg)
 
-Once you finished, you can now glue the previously glued parts, 1+2 with 3+4.
+Dopo aver finito, potete incollare le parti restanti che avete già incollato, 1+2 e 3+4.
 
 ![copper connectors](images/illustrations/board-esploso.jpg)
 
-Once the glue has dried, put the magnets in the little holes. Turn your top layer upside-down and fill the little holes with the magnets, make sure they are all in the same direction, doesn't matter if north or south. Seal the hole with a drop of hot glue.
+Dopo che la colla si è asciugata, inserite i magneti nei piccoli fori. Capovolgete lo strato superiore e inserite i magneti nei piccoli fori, assicurandovi che siano tutti nello stesso version, non importa se sia sopra o sotto. Riempite il foro con una goccia di colla calda.
 
-Now the electronics. Start by making rails for the 5V and the GND, all along the hole lines like in the picture. The first ever prototype never had copper strips, it had wires (which you can also use), but in this prototype we used copper tape also for the rails. A real 100% time saver. It also makes things easier for creating connections.
+Ora tocca all'elettronica. Iniziate creando una rotaia per il 5v e per il GND, lungo la linea del foro cosi' come si vede nelle immagini seguenti. Per il primo prototipo non abbiamo mai usato le strisce di rame: abbiamo usato (come potete fare anche voi) i cavi, ma per questo prototipo abbiamo usato nastro di rame per realizzare le rotaie: una soluzione che vi farà sicuramente risparmiare tempo. Vi renderà le cose più facili quando dovrete crare le connessioni. 
 
 ![rails](images/illustrations/board-3.jpg)
 
-The next step is to wire one of the two connectors of every hole, to the ground rail. If you used copper tape, you can just use a tiny extra bit of it, just enough to touch both ends.
+Il passaggio successivo è di connettere con i cavi uno dei due connettori di ogni foro alla rotadia del Ground. Se avete usato ul nastro di rame, basta che ne usate ancora un pò solo per connettere le parti finali. 
 
 ![rails](images/illustrations/board-5.jpg)
 
-Now we have to connect the other side of each connector to the 5V rail, but this time, with a 10KΩ resistor in-between. A cool thing of copper tape is that solder melts very well on top of it. This is the technique used:
+Ora bisogna connettere l'altro lato del connettore alla rotaia del 5v, ma questa volta con una resistenza da 100k nel mezzo. Una cosa molto interessante del nastro di rame è che lo stagno si scioglie molto bene su di esso. Questa è la technica da usare.
 
 ![10k](images/photo/diy-docs-1.jpg)
 
-At the end of this process, you should have something like this:
+Alla fine di questo lavoro, dovreste ottenere una cosa simile a questa:
 
 ![10k scheme](images/illustrations/board-6.jpg)
 
-Now it's time to put the LEDs; stick one red LED in each one of the 16 holes, then use a drop of hot glue to seal them to the wood. Once the glue is cold, we have to connect them. Just mind that LEDs have a polarity: the long leg is the anode and the short one the cathode. Connect each cathode to the ground rail, using a 220Ω Resistor.
+Ora è il momento di posizionare i LED; attaccate un LED rosso in ognuno del 16 fori, poi usate una goccia di colla calda per unirli al legno. Una volta che la colla si raffredda, dovete connetterli. Ricordate solo che il LED ha una polarità: la gambetta lunga è un anodo, quella corta un catodo. Connettete ogni catodo alla rotaia del ground, usando una resistenza da 220Ω.
 
 ![10k](images/photo/diy-docs-6.jpg)
 
-Connect each cathode to the ground rail, using a 220Ω Resistor.
+Connettete ogni catodo alla rotaia del ground, each cathode to the ground rail, usando una resistenza da 220Ω.
 
 ![10k scheme](images/illustrations/board-7.jpg)
 
-The long leg of the LED, must be connected to a digital I/O pin on the Arduino Mega, these pins are numbered from 22 to 53. The LEDs must be connected in order, so that it will be much easier to access them later on in the code, in my prototype for example I started from pin number 30 up to 45 (there are 16 LEDs). 
-The starting point is not important, as long as they are in the correct sequential order. This means for example that if we start from pin 30, the first LED must be attached to pin 30, the second to pin 31, the third to pin 32 and so on until LED 16 to pin 45. 
+La gambetta lunga del LED deve essere connessa al pin digital I/O sull'Arduino Mega. Le pin sono numerate da 22 a 53. I LED deveno essere connessi in ordine in modo che sia più semplice gestirli in seguito nel codice. Nel primo prototipo per esempio abbiamo iniziato dal pin numero 30 al pin 45 (ci sono 16 led).
+Il punto iniziale non è importante, fino a quando sono posizionati nella sequenza corretta. Questo vuol dire per esempio che se si inizia dal pin 30, il primo LED deve essere connesso al pin 30, il secondo al pin 31, il terzo al pin 32 e così via fino al LED 16 che va con il pin 45. 
 
-The cables are soldered to a rack of double male headers, as the digital pins on the Arduino Mega are laid out in a double line. In this way it's easy to plug and remove the Arduino from the board.
-
+I cavi sono saldati a una fila di header doppi maschi, visto che i pin digitali dell'Arduino Mega sono disposti in una fila doppia. In questo modo è facile inseire o rimuovere la scheda Arduino dall'interfaccia fisica.
 ![rack](images/photo/diy-docs-4.jpg)
 
-Once all the LEDs are soldered, we have to solder our hand made connectors. These must be wired to the Arduino Mega analog pins, to read the different resistor values. Just like the LEDs, these must be connected in order, starting from A0 for hole 1 to A15 for hole 16. The wire has to start from the same point where we soldered previously the 10K resistor. See the illustration:
+Dopo che i LED sono saldati, bisogna saldare i connettori fatti a mano. Questi devono essere connessi con i cavetti ai pin analogici dell'Arduino Mega in modo che legga i valori delle varie resistenze. Come i LED, le resistenze devono essere connesse secondo un ordine che va da A0 per il foro 1 a A5 per il foro 16. Il cavetto deve  Just like the LEDs, these must be connected in order, starting from A0 for hole 1 to A15 for hole 16. The wire has to start from the same point where we soldered previously the 10K resistor. See the illustration:
 
 ![analog input board connections](images/illustrations/board-8.jpg)
 
